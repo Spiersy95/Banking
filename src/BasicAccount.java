@@ -1,4 +1,4 @@
-public class BasicAccount {
+public class BasicAccount implements AccountMethods{
     private int balance;
     private String accountNumber;
 
