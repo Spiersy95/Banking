@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Rename Account.java to BasicAccount.java.">
+    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Create an interface called AccountMethods.java and implement on basic BasicAccount.java.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AccountMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,25 +33,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Scott/IdeaProjects/Banking System",
     "onboarding.tips.debug.path": "C:/Users/Scott/IdeaProjects/Banking SYstem/src/Main.java",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Banking System" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Banking System" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -103,14 +88,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690554412542</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Create an interface called AccountMethods.java and implement on basic BasicAccount.java.">
+      <option name="closed" value="true" />
+      <created>1690556181176</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690556181176</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Create account class." />
     <MESSAGE value="Rename Account.java to BasicAccount.java." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename Account.java to BasicAccount.java." />
+    <MESSAGE value="Create an interface called AccountMethods.java and implement on basic BasicAccount.java." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create an interface called AccountMethods.java and implement on basic BasicAccount.java." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
