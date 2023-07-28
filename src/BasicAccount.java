@@ -1,8 +1,8 @@
-public class Account {
+public class BasicAccount {
     private int balance;
     private String accountNumber;
 
-    public Account(String accountNumber, int balance){
+    public BasicAccount(String accountNumber, int balance){
         this.accountNumber = accountNumber;
         this.balance = balance;
 
