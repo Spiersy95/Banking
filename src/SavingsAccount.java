@@ -1,11 +1,16 @@
+import java.util.ArrayList;
+
 public class SavingsAccount implements AccountMethods {
     private int balance;
     private String accountNumber;
+    private ArrayList<Customer> customers;
 
-    public SavingsAccount(String accountNumber, int balance){
+    public SavingsAccount(String accountNumber, Customer[] customers, int balance){
         this.accountNumber = accountNumber;
         this.balance = balance;
-
+        for (int i = 0; i < customers.length; i++){
+            this.customers.add(customers[i]);
+        }
     }
 
     @Override
