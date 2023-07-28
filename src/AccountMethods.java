@@ -1,10 +1,10 @@
 public interface AccountMethods {
-    int checkBalance();
-    void transfer(String target);
+    int getBalance();
+    void transfer(AccountMethods target, int money);
     void withdraw(int money);
     void deposit(int money);
-    void setAccountNumber(String accountNumber);
-    void getAccountNumber();
+    String getAccountNumber();
+
 
 
 }
