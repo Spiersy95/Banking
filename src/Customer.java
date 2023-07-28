@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-;
+
 
 public class Customer {
     private String name;
@@ -13,6 +13,9 @@ public class Customer {
                 for (int i = 0; i < accountsList.length; i++){
                     accountsArray.add(accountsList[i]);
         }
+    }
+    private void registerAccount(AccountMethods account){
+        this.accountsArray.add(account);
     }
 
 }
