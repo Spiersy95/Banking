@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Initial commit of the new branch creating the database.">
+      <change beforePath="$PROJECT_DIR$/src/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -166,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690584832285</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Initial commit of the new branch creating the database.">
+      <option name="closed" value="true" />
+      <created>1691501205377</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1691501205377</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,7 +204,8 @@
     <MESSAGE value="Add a customers field and fix the constructor" />
     <MESSAGE value="Add a field to keep track of accounts belonging to customer" />
     <MESSAGE value="Add a field to say how many customers are on the account. Fixed the constructor." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a field to say how many customers are on the account. Fixed the constructor." />
+    <MESSAGE value="Initial commit of the new branch creating the database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit of the new branch creating the database." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
