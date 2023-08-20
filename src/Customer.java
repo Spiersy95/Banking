@@ -17,9 +17,7 @@ public class Customer {
         enoughFunds = accountLock.newCondition();
 
     }
-    public void registerAccount(AccountMethods account){
-        this.accountsArray.add(account);
-    }
+
 
     public void withdraw(AccountMethods account, int money){
         boolean waiting = true;
