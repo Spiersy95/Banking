@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Add Withdraw Method to Customer class.">
-      <change beforePath="$PROJECT_DIR$/src/BasicAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicAccount.java" afterDir="false" />
+    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="begin constructing the transfer method in Customer class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +21,34 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="Clock_and_database" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
+  </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Clock_and_database" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -195,7 +217,39 @@
       <option name="project" value="LOCAL" />
       <updated>1692559148032</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add transfer method to BasicAccount Class.">
+      <option name="closed" value="true" />
+      <created>1692566905272</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1692566905272</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Remove accounts array private field.">
+      <option name="closed" value="true" />
+      <created>1692567064214</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1692567064214</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Remove register account method.">
+      <option name="closed" value="true" />
+      <created>1692567149121</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1692567149121</updated>
+    </task>
+    <task id="LOCAL-00020" summary="begin constructing the transfer method in Customer class">
+      <option name="closed" value="true" />
+      <created>1692568092080</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1692568092080</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,7 +257,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Clock_and_database" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -223,7 +289,11 @@
     <MESSAGE value="Initial commit of the new branch creating the database." />
     <MESSAGE value="change field accounts from non-static to static" />
     <MESSAGE value="Add Withdraw Method to Customer class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Withdraw Method to Customer class." />
+    <MESSAGE value="add transfer method to BasicAccount Class." />
+    <MESSAGE value="Remove accounts array private field." />
+    <MESSAGE value="Remove register account method." />
+    <MESSAGE value="begin constructing the transfer method in Customer class" />
+    <option name="LAST_COMMIT_MESSAGE" value="begin constructing the transfer method in Customer class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

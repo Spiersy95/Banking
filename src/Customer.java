@@ -42,8 +42,19 @@ public class Customer {
 
         }
 
-    public void transfer(AccountMethods target, int money){
+    public void transfer(AccountMethods source, AccountMethods target, int money){
         accountLock.lock();
+        try{
+            if (money > source.getBalance()){
+                source.withdraw(money);
+                target.deposit(money);
+            } else {
+                System.out.println("Sorry this account does not have the funds for a transfer");
+            }
+        }  finally {
+            enoughFunds.signalAll();
+            accountLock.unlock();
+        }
 
     }
 
