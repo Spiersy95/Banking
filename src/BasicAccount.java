@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class BasicAccount implements AccountMethods{
     private int balance;
@@ -9,10 +10,7 @@ public class BasicAccount implements AccountMethods{
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customers = new ArrayList<>();
-        for (int i = 0; i < customers.length; i++){
-            this.customers.add(customers[i]);
-            customers[i].registerAccount(this);
-        }
+        this.customers.addAll(Arrays.asList(customers));
 
     }
 
