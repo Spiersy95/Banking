@@ -3,7 +3,7 @@ public interface AccountMethods {
     void transfer(AccountMethods target, int money);
     void withdraw(int money);
     void deposit(int money);
-    String getAccountNumber();
+
 
 
 

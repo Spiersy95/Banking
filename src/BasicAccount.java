@@ -11,6 +11,7 @@ public class BasicAccount implements AccountMethods{
         this.customers = new ArrayList<>();
         for (int i = 0; i < customers.length; i++){
             this.customers.add(customers[i]);
+            customers[i].registerAccount(this);
         }
 
     }
@@ -30,12 +31,13 @@ public class BasicAccount implements AccountMethods{
     public void deposit(int money){
         balance += money;
     }
-    public String getAccountNumber(){
-        return accountNumber;
-    }
     public int getBalance(){
         return balance;
     }
+    public String toString(){
+        return accountNumber;
+    }
+
 
 
 }
