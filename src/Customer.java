@@ -18,7 +18,16 @@ public class Customer {
 
     }
 
+    public void deposit(AccountMethods account, int money){
+        accountLock.lock();
+        try {
+            account.deposit(money);
 
+        } finally{
+            enoughFunds.signalAll();
+            accountLock.unlock();
+        }
+    }
     public void withdraw(AccountMethods account, int money){
         boolean waiting = true;
         accountLock.lock();
