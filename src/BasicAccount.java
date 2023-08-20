@@ -18,7 +18,10 @@ public class BasicAccount implements AccountMethods{
 
     @Override
     public void transfer(AccountMethods target, int money) {
-    //add code to allow transfer between accounts
+        if (money <= balance){
+            target.deposit(money);
+            balance -= money;
+        }
     }
     public int checkBalance(){
         return this.balance;
