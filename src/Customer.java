@@ -42,6 +42,11 @@ public class Customer {
 
         }
 
+    public void transfer(AccountMethods target, int money){
+        accountLock.lock();
+
+    }
+
 
     }
 
