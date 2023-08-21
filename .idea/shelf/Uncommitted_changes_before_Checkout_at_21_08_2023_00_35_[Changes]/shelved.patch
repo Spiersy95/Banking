@@ -1,0 +1,65 @@
+Index: src/BasicAccount.java
+===================================================================
+diff --git a/src/BasicAccount.java b/src/Model/BasicAccount.java
+rename from src/BasicAccount.java
+rename to src/Model/BasicAccount.java
+--- a/src/BasicAccount.java	
++++ b/src/Model/BasicAccount.java	
+@@ -1,7 +1,9 @@
++package Model;
++
+ import java.util.ArrayList;
+ import java.util.Arrays;
+ 
+-public class BasicAccount implements AccountMethods{
++public class BasicAccount implements AccountMethods {
+     private int balance;
+     private String accountNumber;
+     private ArrayList<Customer> customers;
+Index: src/AccountMethods.java
+===================================================================
+diff --git a/src/AccountMethods.java b/src/Model/AccountMethods.java
+rename from src/AccountMethods.java
+rename to src/Model/AccountMethods.java
+--- a/src/AccountMethods.java	
++++ b/src/Model/AccountMethods.java	
+@@ -1,3 +1,5 @@
++package Model;
++
+ public interface AccountMethods {
+     int getBalance();
+     void transfer(AccountMethods target, int money);
+Index: src/Database.java
+===================================================================
+diff --git a/src/Database.java b/src/Model/Database.java
+rename from src/Database.java
+rename to src/Model/Database.java
+--- a/src/Database.java	
++++ b/src/Model/Database.java	
+@@ -1,6 +1,8 @@
++package Model;
++
++import Model.AccountMethods;
++
+ import java.util.ArrayList;
+-import java.util.Timer;
+-import java.util.TimerTask;
+ 
+ public class Database {
+     private static ArrayList<AccountMethods> accounts = new ArrayList<AccountMethods>();
+Index: src/SavingsAccount.java
+===================================================================
+diff --git a/src/SavingsAccount.java b/src/Model/SavingsAccount.java
+rename from src/SavingsAccount.java
+rename to src/Model/SavingsAccount.java
+--- a/src/SavingsAccount.java	
++++ b/src/Model/SavingsAccount.java	
+@@ -1,3 +1,8 @@
++package Model;
++
++import Model.AccountMethods;
++import Model.Customer;
++
+ import java.util.ArrayList;
+ 
+ public class SavingsAccount implements AccountMethods {

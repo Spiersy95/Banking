@@ -1,0 +1,83 @@
+Index: src/Customer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Customer.java b/src/Customer.java
+deleted file mode 100644
+--- a/src/Customer.java	(revision ab2380d9fdc924d6196f4368ce4c5e18a8fb7dac)
++++ /dev/null	(revision ab2380d9fdc924d6196f4368ce4c5e18a8fb7dac)
+@@ -1,47 +0,0 @@
+-import java.util.ArrayList;
+-import java.util.concurrent.TimeUnit;
+-import java.util.concurrent.locks.Condition;
+-import java.util.concurrent.locks.ReentrantLock;
+-
+-
+-public class Customer {
+-    private String name;
+-    private ReentrantLock accountLock;
+-    private Condition enoughFunds;
+-
+-
+-
+-    public Customer(String name){
+-        this.name = name;
+-        accountLock = new ReentrantLock();
+-        enoughFunds = accountLock.newCondition();
+-
+-    }
+-
+-
+-    public void withdraw(AccountMethods account, int money){
+-        boolean waiting = true;
+-        accountLock.lock();
+-        try{
+-            while (money > account.getBalance()){
+-                if (!waiting){
+-                    Thread.currentThread().interrupt();
+-                }
+-                waiting = enoughFunds.await(1,TimeUnit.SECONDS);
+-            }
+-            System.out.println("Withdraw Thread: Balance at the beginning of thread: " + account.getBalance());
+-            account.withdraw(money);
+-            System.out.println("Withdraw Thread: Attempting to withdraw "+ money);
+-            System.out.println("Withdraw Thread: Balance at the end of thread: " + account.getBalance());
+-        } catch (InterruptedException e){
+-            System.out.println("Sorry the withdrawal took to long and we cannot wait any longer");
+-        } finally {
+-            enoughFunds.signalAll();
+-            accountLock.unlock();
+-        }
+-
+-        }
+-
+-
+-    }
+-
+Index: src/BankEmployee.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/BankEmployee.java b/src/BankEmployee.java
+deleted file mode 100644
+--- a/src/BankEmployee.java	(revision ab2380d9fdc924d6196f4368ce4c5e18a8fb7dac)
++++ /dev/null	(revision ab2380d9fdc924d6196f4368ce4c5e18a8fb7dac)
+@@ -1,16 +0,0 @@
+-import java.util.Random;
+-public class BankEmployee {
+-
+-    public BankEmployee(){
+-
+-    }
+-    public BasicAccount createBasicAccount(String accountNumber, Customer[] customers, int money){
+-        return new BasicAccount(accountNumber, customers, money);
+-
+-    }
+-    public SavingsAccount createSavingsAccount(String accountNumber, Customer[] customers, int money){
+-        return new SavingsAccount(accountNumber, customers, money);
+-
+-    }
+-
+-}
