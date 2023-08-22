@@ -1,3 +1,8 @@
+package Models;
+
+import Models.AccountMethods;
+import Models.Customer;
+
 import java.util.ArrayList;
 
 public class SavingsAccount implements AccountMethods {
