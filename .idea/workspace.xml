@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="restore to a previous point.">
+    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Create a package called Model and added my classes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AccountMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/AccountMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BankEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/BankEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/BasicAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SavingsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/SavingsAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692577558174</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Create a package called Model and added my classes.">
+      <option name="closed" value="true" />
+      <created>1692740756748</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1692740756750</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,7 +373,8 @@
     <MESSAGE value="Remove unused import" />
     <MESSAGE value="Fix basic account constructor." />
     <MESSAGE value="restore to a previous point." />
-    <option name="LAST_COMMIT_MESSAGE" value="restore to a previous point." />
+    <MESSAGE value="Create a package called Model and added my classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a package called Model and added my classes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

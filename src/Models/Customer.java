@@ -25,7 +25,6 @@ public class Customer {
         accountLock.lock();
         try {
             account.deposit(money);
-
         } finally{
             enoughFunds.signalAll();
             accountLock.unlock();
@@ -69,7 +68,16 @@ public class Customer {
         }
 
     }
+    public void getBalance(AccountMethods account){
+        accountLock.lock();
+        try{
+            account.getBalance();
+        } finally {
+            enoughFunds.signalAll();
+            accountLock.lock();
+        }
 
+    }
 
     }
 
