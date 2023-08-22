@@ -2,6 +2,7 @@ package Models;
 
 import Models.AccountMethods;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
@@ -11,6 +12,7 @@ public class Customer {
     private String name;
     private ReentrantLock accountLock;
     private Condition enoughFunds;
+    private ArrayList<AccountMethods> accountList;
 
 
 
@@ -18,6 +20,7 @@ public class Customer {
         this.name = name;
         accountLock = new ReentrantLock();
         enoughFunds = accountLock.newCondition();
+        accountList = new ArrayList<>(3);
 
     }
 
