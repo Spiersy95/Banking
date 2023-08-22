@@ -1,27 +1,26 @@
+package Models;
+
+import Models.AccountMethods;
+import Models.Customer;
+
 import java.util.ArrayList;
 
-public class BasicAccount implements AccountMethods{
+public class SavingsAccount implements AccountMethods {
     private int balance;
     private String accountNumber;
     private ArrayList<Customer> customers;
 
-    public BasicAccount(String accountNumber, Customer[] customers, int balance){
+    public SavingsAccount(String accountNumber, Customer[] customers, int balance){
         this.accountNumber = accountNumber;
         this.balance = balance;
-        this.customers = new ArrayList<>();
         for (int i = 0; i < customers.length; i++){
             this.customers.add(customers[i]);
-            customers[i].registerAccount(this);
         }
-
     }
 
     @Override
     public void transfer(AccountMethods target, int money) {
-        if (money <= balance){
-            target.deposit(money);
-            balance -= money;
-        }
+        //add code to allow transfer between accounts
     }
     public int checkBalance(){
         return this.balance;
@@ -34,13 +33,10 @@ public class BasicAccount implements AccountMethods{
     public void deposit(int money){
         balance += money;
     }
+    public String getAccountNumber(){
+        return accountNumber;
+    }
     public int getBalance(){
         return balance;
     }
-    public String toString(){
-        return accountNumber;
-    }
-
-
-
 }
