@@ -1,7 +1,11 @@
+package Models;
+
+import Models.AccountMethods;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class BasicAccount implements AccountMethods{
+public class BasicAccount implements AccountMethods {
     private int balance;
     private String accountNumber;
     private ArrayList<Customer> customers;
