@@ -9,7 +9,7 @@ public class WithdrawRun implements Runnable{
     private AccountMethods account;
     private int money;
 
-    public DepositRun(Customer customer, AccountMethods account, int money){
+    public WithdrawRun(Customer customer, AccountMethods account, int money){
         this.customer = customer;
         this.account = account;
         this.money = money;
