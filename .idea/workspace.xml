@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Create a package called Model and added my classes.">
+    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Commit changes before reattatching head">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,7 +307,55 @@
       <option name="project" value="LOCAL" />
       <updated>1692740756750</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add getBalance method to Customer class and change Main to getBalanceRun which implements runnable.">
+      <option name="closed" value="true" />
+      <created>1692742444971</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1692742444971</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add a field which keeps track of which accounts belong to each Customer.">
+      <option name="closed" value="true" />
+      <created>1692744076345</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1692744076345</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Commit changes before reattatching head">
+      <option name="closed" value="true" />
+      <created>1692745400158</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1692745400158</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Commit changes before reattatching head">
+      <option name="closed" value="true" />
+      <created>1692745421650</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1692745421650</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Commit changes before reattatching head">
+      <option name="closed" value="true" />
+      <created>1692745540261</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1692745540261</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Commit changes before reattatching head">
+      <option name="closed" value="true" />
+      <created>1692745545826</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1692745545826</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -351,7 +397,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial Commit" />
     <MESSAGE value="Create account class." />
     <MESSAGE value="Rename Account.java to BasicAccount.java." />
     <MESSAGE value="Create an interface called AccountMethods.java and implement on basic BasicAccount.java." />
@@ -374,13 +419,16 @@
     <MESSAGE value="Fix basic account constructor." />
     <MESSAGE value="restore to a previous point." />
     <MESSAGE value="Create a package called Model and added my classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a package called Model and added my classes." />
+    <MESSAGE value="Add getBalance method to Customer class and change Main to getBalanceRun which implements runnable." />
+    <MESSAGE value="Add a field which keeps track of which accounts belong to each Customer." />
+    <MESSAGE value="Commit changes before reattatching head" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit changes before reattatching head" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/getBalanceRun.java</url>
           <line>4</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
