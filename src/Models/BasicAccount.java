@@ -10,11 +10,11 @@ public class BasicAccount implements AccountMethods {
     private String accountNumber;
     private ArrayList<Customer> customers;
 
-    public BasicAccount(String accountNumber, Customer[] customers, int balance){
+    public BasicAccount(String accountNumber, int balance){
         this.accountNumber = accountNumber;
         this.balance = balance;
-        this.customers = new ArrayList<>();
-        this.customers.addAll(Arrays.asList(customers));
+
+
 
     }
 
