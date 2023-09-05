@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Commit changes before reattatching head">
+    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Fix the constructor in the BasicAccount class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BankRunnables/getBalanceRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankRunnables/GetBalanceRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/BankEmployee.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,22 +63,26 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2TCTsMj60YgImA7ComFjMmRAiys" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Scott/IdeaProjects/Banking System&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Scott/IdeaProjects/Banking SYstem/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "C:/Users/Scott/IdeaProjects/Banking System",
+    "onboarding.tips.debug.path": "C:/Users/Scott/IdeaProjects/Banking SYstem/src/Main.java",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Model" />
@@ -355,7 +361,47 @@
       <option name="project" value="LOCAL" />
       <updated>1692745545826</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Create 2 classes which implements runnable">
+      <option name="closed" value="true" />
+      <created>1692920093476</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1692920093476</updated>
+    </task>
+    <task id="LOCAL-00035" summary="make another class which implements runnable">
+      <option name="closed" value="true" />
+      <created>1692920265506</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1692920265506</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Fix error">
+      <option name="closed" value="true" />
+      <created>1692920293508</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1692920293508</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Create test package">
+      <option name="closed" value="true" />
+      <created>1693920520760</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1693920520760</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Fix the constructor in the BasicAccount class">
+      <option name="closed" value="true" />
+      <created>1693920556832</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1693920556832</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -397,11 +443,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create account class." />
-    <MESSAGE value="Rename Account.java to BasicAccount.java." />
-    <MESSAGE value="Create an interface called AccountMethods.java and implement on basic BasicAccount.java." />
-    <MESSAGE value="Create SavingsAccount.java" />
-    <MESSAGE value="Add customer class with constructor." />
     <MESSAGE value="Add class BankEmployee with ability to create both types of accounts" />
     <MESSAGE value="Add a customers field and fix the constructor" />
     <MESSAGE value="Add a field to keep track of accounts belonging to customer" />
@@ -422,17 +463,11 @@
     <MESSAGE value="Add getBalance method to Customer class and change Main to getBalanceRun which implements runnable." />
     <MESSAGE value="Add a field which keeps track of which accounts belong to each Customer." />
     <MESSAGE value="Commit changes before reattatching head" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit changes before reattatching head" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/getBalanceRun.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Create 2 classes which implements runnable" />
+    <MESSAGE value="make another class which implements runnable" />
+    <MESSAGE value="Fix error" />
+    <MESSAGE value="Create test package" />
+    <MESSAGE value="Fix the constructor in the BasicAccount class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix the constructor in the BasicAccount class" />
   </component>
 </project>
