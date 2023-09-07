@@ -13,20 +13,13 @@ public class BasicAccount implements AccountMethods {
     public BasicAccount(String accountNumber, int balance){
         this.accountNumber = accountNumber;
         this.balance = balance;
-
-
-
     }
-
     @Override
     public void transfer(AccountMethods target, int money) {
         if (money <= balance){
             target.deposit(money);
-            balance -= money;
+            this.withdraw(money);
         }
-    }
-    public int checkBalance(){
-        return this.balance;
     }
     public void withdraw(int money){
         if (this.getBalance() >= money){
