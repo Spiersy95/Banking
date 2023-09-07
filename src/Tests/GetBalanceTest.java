@@ -8,7 +8,7 @@ import Models.Customer;
 
 public class GetBalanceTest {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args)  {
 
         BasicAccount bs1 = new BasicAccount("001", 5000);
         Customer scott = new Customer("Scott");
