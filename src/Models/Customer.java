@@ -79,8 +79,11 @@ public class Customer {
     }
     public void getBalance(AccountMethods account){
         accountLock.lock();
-        try{
+        try{ if (this.accountList.contains(account)){
             account.getBalance();
+        } else {
+            System.out.println("You do are not authorized to see this account");
+        }
         } finally {
             enoughFunds.signalAll();
             accountLock.lock();
