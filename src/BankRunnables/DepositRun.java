@@ -16,6 +16,11 @@ public class DepositRun implements Runnable{
     }
 
     public void run(){
-        customer.deposit(account, money);
+        try{
+            customer.deposit(account, money);
+            Thread.sleep(2);
+        } catch (InterruptedException e){
+            System.out.println("Sorry something went wrong");
+        }
     }
 }
