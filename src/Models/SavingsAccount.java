@@ -13,17 +13,14 @@ public class SavingsAccount implements AccountMethods {
     public SavingsAccount(String accountNumber, Customer[] customers, int balance){
         this.accountNumber = accountNumber;
         this.balance = balance;
-        for (int i = 0; i < customers.length; i++){
-            this.customers.add(customers[i]);
-        }
     }
 
     @Override
     public void transfer(AccountMethods target, int money) {
-        //add code to allow transfer between accounts
-    }
-    public int checkBalance(){
-        return this.balance;
+        if (money <= balance){
+            target.deposit(money);
+            this.withdraw(money);
+        }
     }
     public void withdraw(int money){
         if (this.getBalance() >= money){
@@ -33,10 +30,10 @@ public class SavingsAccount implements AccountMethods {
     public void deposit(int money){
         balance += money;
     }
-    public String getAccountNumber(){
-        return accountNumber;
-    }
     public int getBalance(){
         return balance;
+    }
+    public String toString(){
+        return accountNumber;
     }
 }
