@@ -82,7 +82,7 @@ public class Customer {
         try{ if (this.accountList.contains(account)){
             account.getBalance();
         } else {
-            System.out.println("You do are not authorized to see this account");
+            System.out.println("Youare not authorized to see this account");
         }
         } finally {
             enoughFunds.signalAll();
