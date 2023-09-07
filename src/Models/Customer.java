@@ -87,7 +87,7 @@ public class Customer {
         if (this.accountList.size() >= 3){
             System.out.println("Sorry You already have the maximum number of accounts with us");
         }
-        if (this.accountList.contains(account){
+        if (this.accountList.contains(account)){
             System.out.println("You have already opened this account");
         }
 
