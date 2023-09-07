@@ -92,5 +92,13 @@ public class Customer {
         }
 
     }
+
+    public void closeAccount(AccountMethods account){
+        if (this.accountList.contains(account)){
+            this.accountList.remove(account);
+        } else {
+            System.out.println("Sorry you are not associated with this account");
+        }
+    }
     }
 
