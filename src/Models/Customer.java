@@ -77,28 +77,28 @@ public class Customer {
         }
 
     }
-    public void getBalance(AccountMethods account){
+    public Integer getBalance(AccountMethods account){
         accountLock.lock();
-        try{ if (this.accountList.contains(account)){
-            account.getBalance();
+        try{if (this.accountList.contains(account)){
+            return account.getBalance();
         } else {
             System.out.println("You are not authorized to see this account");
+            return null;
         }
         } finally {
             enoughFunds.signalAll();
-            accountLock.lock();
+            accountLock.unlock();
         }
-
     }
     public void openAccount(AccountMethods account){
-        if (!this.accountList.contains(account) && this.accountList.size() < 3) {
-            this.accountList.add(account);
-        }
         if (this.accountList.size() >= 3){
             System.out.println("Sorry You already have the maximum number of accounts with us");
         }
         if (this.accountList.contains(account)){
             System.out.println("You have already opened this account");
+        }
+        if (!this.accountList.contains(account) && this.accountList.size() < 3) {
+            this.accountList.add(account);
         }
 
     }
