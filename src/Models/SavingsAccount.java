@@ -1,16 +1,12 @@
 package Models;
 
-import Models.AccountMethods;
-import Models.Customer;
-
 import java.util.ArrayList;
 
 public class SavingsAccount implements AccountMethods {
     private int balance;
     private String accountNumber;
-    private ArrayList<Customer> customers;
 
-    public SavingsAccount(String accountNumber, Customer[] customers, int balance){
+    public SavingsAccount(String accountNumber, int balance){
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
