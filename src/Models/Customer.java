@@ -21,7 +21,6 @@ public class Customer {
         accountLock = new ReentrantLock();
         enoughFunds = accountLock.newCondition();
         accountList = new ArrayList<>(3);
-
     }
 
     public void deposit(AccountMethods account, int money){
@@ -81,6 +80,17 @@ public class Customer {
         }
 
     }
+    public void openAccount(AccountMethods account){
+        if (!this.accountList.contains(account) && this.accountList.size() < 3) {
+            this.accountList.add(account);
+        }
+        if (this.accountList.size() >= 3){
+            System.out.println("Sorry You already have the maximum number of accounts with us");
+        }
+        if (this.accountList.contains(account){
+            System.out.println("You have already opened this account");
+        }
 
+    }
     }
 
