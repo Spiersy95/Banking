@@ -35,7 +35,7 @@ public class Customer {
     public void withdraw(AccountMethods account, int money){
         boolean waiting = true;
         accountLock.lock();
-        try{
+        try{if (this.accountList.contains(account)){
             while (money > account.getBalance()){
                 if (!waiting){
                     Thread.currentThread().interrupt();
@@ -46,6 +46,10 @@ public class Customer {
             account.withdraw(money);
             System.out.println("Withdraw Thread: Attempting to withdraw "+ money);
             System.out.println("Withdraw Thread: Balance at the end of thread: " + account.getBalance());
+        } else {
+            System.out.println("You are not associated with this account");
+        }
+
         } catch (InterruptedException e){
             System.out.println("Sorry the withdrawal took to long and we cannot wait any longer");
         } finally {
