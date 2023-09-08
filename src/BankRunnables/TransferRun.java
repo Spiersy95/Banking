@@ -19,7 +19,11 @@ public class TransferRun implements Runnable {
     }
     public void run(){
         customer.transfer(source, target, money);
-        Thread.sleep(1);
+        try {
+            Thread.sleep(1);
+        } catch (InterruptedException e){
+            System.out.println("Sorry an error has occurred");
+        }
         //sleep is to force computer to do two actions at the same time to test the locks.
     }
 
