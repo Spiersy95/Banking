@@ -60,15 +60,14 @@ public class Customer {
     public void transfer(AccountMethods source, AccountMethods target, int money){
         accountLock.lock();
         try{
+            if (!this.accountList.contains(source)){
+                System.out.println("Sorry you are not associated with this account");
+            } else if (money > source.getBalance()) {
+                System.out.println("sorry you do not have the funds for this");
+            }
             if (money <= source.getBalance() && this.accountList.contains(source)){
                 source.withdraw(money);
                 target.deposit(money);
-            }
-            if (!this.accountList.contains(source)){
-                System.out.println("Sorry you are not associated with this account");
-            }
-            if (money > source.getBalance()) {
-                System.out.println("sorry you do not have the funds for this");
             }
         }  finally {
             enoughFunds.signalAll();

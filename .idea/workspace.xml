@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Remove typo from getBalance method">
+    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Fix a logic error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BankRunnables/DepositRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankRunnables/DepositRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BankRunnables/GetBalanceRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankRunnables/GetBalanceRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/BasicAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/BasicAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/SavingsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/SavingsAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/GetBalanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/GetBalanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/TransferAndWithdrawTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TransferAndWithdrawTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,134 +96,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690546272975</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Initial Commit">
-      <option name="closed" value="true" />
-      <created>1690546904811</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1690546904811</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Initial Commit">
-      <option name="closed" value="true" />
-      <created>1690547365662</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1690547365662</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Create account class.">
-      <option name="closed" value="true" />
-      <created>1690548088570</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1690548088570</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Rename Account.java to BasicAccount.java.">
-      <option name="closed" value="true" />
-      <created>1690550577209</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1690550577209</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Rename Account.java to BasicAccount.java.">
-      <option name="closed" value="true" />
-      <created>1690554412542</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1690554412542</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Create an interface called AccountMethods.java and implement on basic BasicAccount.java.">
-      <option name="closed" value="true" />
-      <created>1690556181176</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1690556181176</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Create SavingsAccount.java">
-      <option name="closed" value="true" />
-      <created>1690560751893</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1690560751893</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Create SavingsAccount.java">
-      <option name="closed" value="true" />
-      <created>1690560760043</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1690560760043</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Add customer class with constructor.">
-      <option name="closed" value="true" />
-      <created>1690562147059</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1690562147059</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Add class BankEmployee with ability to create both types of accounts">
-      <option name="closed" value="true" />
-      <created>1690584288937</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1690584288938</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Add a customers field and fix the constructor">
-      <option name="closed" value="true" />
-      <created>1690584339965</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1690584339965</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Add a field to keep track of accounts belonging to customer">
-      <option name="closed" value="true" />
-      <created>1690584739852</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1690584739852</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Add a field to say how many customers are on the account. Fixed the constructor.">
-      <option name="closed" value="true" />
-      <created>1690584832285</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1690584832285</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Initial commit of the new branch creating the database.">
-      <option name="closed" value="true" />
-      <created>1691501205377</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1691501205377</updated>
-    </task>
-    <task id="LOCAL-00015" summary="change field accounts from non-static to static">
-      <option name="closed" value="true" />
-      <created>1691501960042</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1691501960042</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Add Withdraw Method to Customer class.">
-      <option name="closed" value="true" />
-      <created>1692559148031</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1692559148032</updated>
     </task>
     <task id="LOCAL-00017" summary="add transfer method to BasicAccount Class.">
       <option name="closed" value="true" />
@@ -494,7 +361,135 @@
       <option name="project" value="LOCAL" />
       <updated>1694087385808</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Make Customer getBalance method output Integer wrapping class.">
+      <option name="closed" value="true" />
+      <created>1694095620222</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1694095620230</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Remove some functionality and add comment which shows detailing future plans with project">
+      <option name="closed" value="true" />
+      <created>1694095656639</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1694095656639</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Add tranfer method to class">
+      <option name="closed" value="true" />
+      <created>1694095673438</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1694095673438</updated>
+    </task>
+    <task id="LOCAL-00053" summary="test which shows I do not lose track of the money while processing withdrawls, deposits and checking balances">
+      <option name="closed" value="true" />
+      <created>1694095725665</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1694095725665</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Cleaned up the code">
+      <option name="closed" value="true" />
+      <created>1694095750497</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1694095750497</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Added a sleep to help with testing">
+      <option name="closed" value="true" />
+      <created>1694095764408</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1694095764408</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Add a sleep to help with testing">
+      <option name="closed" value="true" />
+      <created>1694095784915</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1694095784915</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Removed some unused imports">
+      <option name="closed" value="true" />
+      <created>1694096014634</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1694096014634</updated>
+    </task>
+    <task id="LOCAL-00058" summary="remove an exception">
+      <option name="closed" value="true" />
+      <created>1694096048385</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1694096048385</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Create a calss called TransferRun">
+      <option name="closed" value="true" />
+      <created>1694172261874</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1694172261874</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Add a comment for readability">
+      <option name="closed" value="true" />
+      <created>1694172281608</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1694172281608</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Add a coment for readability">
+      <option name="closed" value="true" />
+      <created>1694172296858</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1694172296858</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Test class for runnables">
+      <option name="closed" value="true" />
+      <created>1694172316254</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1694172316254</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Added a try/catch statement">
+      <option name="closed" value="true" />
+      <created>1694172532391</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1694172532391</updated>
+    </task>
+    <task id="LOCAL-00064" summary="create Class to test the transfer and withdraw class together">
+      <option name="closed" value="true" />
+      <created>1694173022318</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1694173022318</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Fix a logic error">
+      <option name="closed" value="true" />
+      <created>1694173362878</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1694173362878</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,22 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add transfer method to BasicAccount Class." />
-    <MESSAGE value="Remove accounts array private field." />
-    <MESSAGE value="Remove register account method." />
-    <MESSAGE value="begin constructing the transfer method in Customer class" />
-    <MESSAGE value="Finish the transfer method in the Customer class" />
-    <MESSAGE value="Make deposit method on Customer Class" />
-    <MESSAGE value="Remove unused import" />
-    <MESSAGE value="Fix basic account constructor." />
-    <MESSAGE value="restore to a previous point." />
-    <MESSAGE value="Create a package called Model and added my classes." />
-    <MESSAGE value="Add getBalance method to Customer class and change Main to getBalanceRun which implements runnable." />
-    <MESSAGE value="Add a field which keeps track of which accounts belong to each Customer." />
-    <MESSAGE value="Commit changes before reattatching head" />
-    <MESSAGE value="Create 2 classes which implements runnable" />
-    <MESSAGE value="make another class which implements runnable" />
-    <MESSAGE value="Create test package" />
     <MESSAGE value="Fix the constructor in the BasicAccount class" />
     <MESSAGE value="Remove some methods from the BankEmployee class." />
     <MESSAGE value="fix the class name of the get balance runnable" />
@@ -561,6 +540,22 @@
     <MESSAGE value="add check that customer is associated to the account in withdraw method" />
     <MESSAGE value="add a check to see if account is associated to customer to balance getter and to transfer method" />
     <MESSAGE value="Remove typo from getBalance method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove typo from getBalance method" />
+    <MESSAGE value="Make Customer getBalance method output Integer wrapping class." />
+    <MESSAGE value="Remove some functionality and add comment which shows detailing future plans with project" />
+    <MESSAGE value="Add tranfer method to class" />
+    <MESSAGE value="test which shows I do not lose track of the money while processing withdrawls, deposits and checking balances" />
+    <MESSAGE value="Cleaned up the code" />
+    <MESSAGE value="Added a sleep to help with testing" />
+    <MESSAGE value="Add a sleep to help with testing" />
+    <MESSAGE value="Removed some unused imports" />
+    <MESSAGE value="remove an exception" />
+    <MESSAGE value="Create a calss called TransferRun" />
+    <MESSAGE value="Add a comment for readability" />
+    <MESSAGE value="Add a coment for readability" />
+    <MESSAGE value="Test class for runnables" />
+    <MESSAGE value="Added a try/catch statement" />
+    <MESSAGE value="create Class to test the transfer and withdraw class together" />
+    <MESSAGE value="Fix a logic error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix a logic error" />
   </component>
 </project>
