@@ -19,6 +19,7 @@ public class DepositRun implements Runnable{
         try{
             customer.deposit(account, money);
             Thread.sleep(2);
+            //sleep is to force computer to do two actions at the same time to test the locks.
         } catch (InterruptedException e){
             System.out.println("Sorry something went wrong");
         }
