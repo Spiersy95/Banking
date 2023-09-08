@@ -37,10 +37,7 @@ public class BasicAccount implements AccountMethods {
                 }
                 waiting = enoughFunds.await(1, TimeUnit.SECONDS);
             }
-            System.out.println("Withdraw Thread: Balance at the beginning of thread: " + this.getBalance());
-            System.out.println("Withdraw Thread: Attempting to withdraw "+ money);
             this.balance -= money;
-            System.out.println("Withdraw Thread: Balance at the end of thread: " + this.getBalance());
         } catch (InterruptedException e){
             System.out.println("Sorry the withdrawal took to long and we cannot wait any longer");
         } finally {

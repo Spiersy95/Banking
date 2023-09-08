@@ -22,7 +22,10 @@ public class Customer {
     }
     public void withdraw(AccountMethods account, int money){
         if (this.accountList.contains(account)){
+            System.out.println("Withdraw Thread: Balance at the beginning of thread: " + account.getBalance());
             account.withdraw(money);
+            System.out.println("Withdraw Thread: Attempting to withdraw "+ money);
+            System.out.println("Withdraw Thread: Balance at the end of thread: " + account.getBalance());
         } else {
             System.out.println("You are not associated with this account");
         }

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Fix a logic error">
+    <list default="true" id="7fb546f2-50f3-47c5-9fb7-0f80fc49c358" name="Changes" comment="Testing showed that the accounts where not thread safe so I moved the reentrant locks to the accounts in order to correct for this">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/BasicAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/BasicAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TransferAndWithdrawTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TransferAndWithdrawTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,22 +96,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690546272975</updated>
-    </task>
-    <task id="LOCAL-00017" summary="add transfer method to BasicAccount Class.">
-      <option name="closed" value="true" />
-      <created>1692566905272</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1692566905272</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Remove accounts array private field.">
-      <option name="closed" value="true" />
-      <created>1692567064214</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1692567064214</updated>
     </task>
     <task id="LOCAL-00019" summary="Remove register account method.">
       <option name="closed" value="true" />
@@ -489,7 +473,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694173362878</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Fix a logic error">
+      <option name="closed" value="true" />
+      <created>1694181869012</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1694181869012</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Testing showed that the accounts where not thread safe so I moved the reentrant locks to the accounts in order to correct for this">
+      <option name="closed" value="true" />
+      <created>1694186596140</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1694186596142</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix the constructor in the BasicAccount class" />
     <MESSAGE value="Remove some methods from the BankEmployee class." />
     <MESSAGE value="fix the class name of the get balance runnable" />
     <MESSAGE value="Construct a openAccount Method" />
@@ -556,6 +555,7 @@
     <MESSAGE value="Added a try/catch statement" />
     <MESSAGE value="create Class to test the transfer and withdraw class together" />
     <MESSAGE value="Fix a logic error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix a logic error" />
+    <MESSAGE value="Testing showed that the accounts where not thread safe so I moved the reentrant locks to the accounts in order to correct for this" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing showed that the accounts where not thread safe so I moved the reentrant locks to the accounts in order to correct for this" />
   </component>
 </project>
