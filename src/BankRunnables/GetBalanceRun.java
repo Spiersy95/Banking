@@ -13,9 +13,8 @@ public class GetBalanceRun implements Runnable {
     }
 
     public void run() {
-        try{
-            System.out.println(customer.getBalance(account));
-            Thread.sleep(1);
+        try{ Thread.sleep(1);
+            customer.getBalance(account);
             //sleep is to force computer to do two actions at the same time to test the locks.
         } catch (InterruptedException e){
             System.out.println("Sorry this thread was interrupted");

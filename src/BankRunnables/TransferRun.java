@@ -19,7 +19,7 @@ public class TransferRun implements Runnable {
     }
     public void run(){
         try {
-            Thread.sleep(1);
+            Thread.sleep(0);
             customer.transfer(source, target, money);
         } catch (InterruptedException e){
             System.out.println("Sorry an error has occurred");

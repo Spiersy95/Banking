@@ -1,6 +1,5 @@
 package Models;
 
-import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
@@ -8,23 +7,21 @@ import java.util.concurrent.locks.ReentrantLock;
 public class BasicAccount implements AccountMethods {
     private int balance;
     private String accountNumber;
-    private ReentrantLock accountLock = new ReentrantLock();
-    private Condition enoughFunds;
+    private final static ReentrantLock accountLock = new ReentrantLock();
+    private final static Condition enoughFunds = accountLock.newCondition();;
 
     public BasicAccount(String accountNumber, int balance){
         this.accountNumber = accountNumber;
         this.balance = balance;
-        this.enoughFunds = accountLock.newCondition();
     }
     @Override
     public void transfer(AccountMethods target, int money) {
         accountLock.lock();
-        try{
-            this.balance -= money;
+        try {
+            this.withdraw(money);
             target.deposit(money);
         } finally {
-            enoughFunds.signalAll();
-            accountLock.unlock();
+            accountLock.lock();
         }
     }
     public void withdraw(int money){
@@ -49,10 +46,10 @@ public class BasicAccount implements AccountMethods {
         accountLock.lock();
         try {
             this.balance += money;
-        } finally{
+        } finally {
             enoughFunds.signalAll();
             accountLock.unlock();
-        };
+        }
     }
     public int getBalance(){
         accountLock.lock();
@@ -66,7 +63,4 @@ public class BasicAccount implements AccountMethods {
     public String toString(){
         return accountNumber;
     }
-
-
-
 }
