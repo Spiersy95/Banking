@@ -17,13 +17,13 @@ public class TransferAndWithdrawTest {
         elly.openAccount(bs1);
         elly.openAccount(bs2);
 
-        TransferRun r1 = new TransferRun(scott, bs1, bs2, 5000);
-        WithdrawRun r2 = new WithdrawRun(elly, bs1,4);
+        TransferRun r1 = new TransferRun(scott, bs1, bs2, 20);
+        WithdrawRun r2 = new WithdrawRun(scott, bs1,4);
 
         Thread t1 = new Thread(r1);
         Thread t2 = new Thread(r2);
 
-        t1.start();
         t2.start();
+        t1.start();
     }
 }

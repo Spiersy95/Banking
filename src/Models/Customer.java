@@ -8,84 +8,43 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Customer {
     private String name;
-    private ReentrantLock accountLock;
-    private Condition enoughFunds;
     private ArrayList<AccountMethods> accountList;
 
 
 
     public Customer(String name){
         this.name = name;
-        accountLock = new ReentrantLock();
-        enoughFunds = accountLock.newCondition();
         accountList = new ArrayList<>(3);
     }
 
     public void deposit(AccountMethods account, int money){
-        accountLock.lock();
-        try {
-            account.deposit(money);
-        } finally{
-            enoughFunds.signalAll();
-            accountLock.unlock();
-        }
+        account.withdraw(money);
     }
     public void withdraw(AccountMethods account, int money){
-        boolean waiting = true;
-        accountLock.lock();
-        try{if (this.accountList.contains(account)){
-            while (money > account.getBalance()){
-                if (!waiting){
-                    Thread.currentThread().interrupt();
-                }
-                waiting = enoughFunds.await(1,TimeUnit.SECONDS);
-            }
-            System.out.println("Withdraw Thread: Balance at the beginning of thread: " + account.getBalance());
+        if (this.accountList.contains(account)){
             account.withdraw(money);
-            System.out.println("Withdraw Thread: Attempting to withdraw "+ money);
-            System.out.println("Withdraw Thread: Balance at the end of thread: " + account.getBalance());
         } else {
             System.out.println("You are not associated with this account");
         }
-
-        } catch (InterruptedException e){
-            System.out.println("Sorry the withdrawal took to long and we cannot wait any longer");
-        } finally {
-            enoughFunds.signalAll();
-            accountLock.unlock();
-        }
-
-        }
+    }
 
     public void transfer(AccountMethods source, AccountMethods target, int money){
-        accountLock.lock();
-        try{
-            if (!this.accountList.contains(source)){
-                System.out.println("Sorry you are not associated with this account");
-            } else if (money > source.getBalance()) {
-                System.out.println("sorry you do not have the funds for this");
-            }
-            if (money <= source.getBalance() && this.accountList.contains(source)){
-                source.withdraw(money);
-                target.deposit(money);
-            }
-        }  finally {
-            enoughFunds.signalAll();
-            accountLock.unlock();
+        if (!this.accountList.contains(source)){
+            System.out.println("Sorry you are not associated with this account");
+        } else if (money > source.getBalance()) {
+            System.out.println("sorry you do not have the funds for this");
         }
-
+        if (money <= source.getBalance() && this.accountList.contains(source)){
+            source.withdraw(money);
+            target.deposit(money);
+        }
     }
     public Integer getBalance(AccountMethods account){
-        accountLock.lock();
-        try{if (this.accountList.contains(account)){
+        if (this.accountList.contains(account)){
             return account.getBalance();
         } else {
             System.out.println("You are not authorized to see this account");
             return null;
-        }
-        } finally {
-            enoughFunds.signalAll();
-            accountLock.unlock();
         }
     }
     public void openAccount(AccountMethods account){
