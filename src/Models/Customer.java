@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class Customer {
     private String name;
     private ArrayList<AccountMethods> accountList;
-    private static final ReentrantLock customerLock = new ReentrantLock();
+    private final ReentrantLock customerLock = new ReentrantLock();
 
 
 

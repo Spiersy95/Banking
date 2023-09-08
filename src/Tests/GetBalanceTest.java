@@ -18,7 +18,7 @@ public class GetBalanceTest {
         elly.openAccount(bs1);
 
         GetBalanceRun r1 = new GetBalanceRun(scott, bs1);
-        WithdrawRun r2 = new WithdrawRun(elly, bs1, 500);
+        WithdrawRun r2 = new WithdrawRun(scott, bs1, 500);
         DepositRun r3 = new DepositRun(scott, bs1 , 500);
 
         Thread t1 = new Thread(r3);
